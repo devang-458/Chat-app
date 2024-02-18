@@ -1,18 +1,20 @@
+import { Button } from "../Components/Button";
+import { FileBox } from "../Components/FileBox";
+import { Heading } from "../Components/Heading";
+import { InputBox } from "../Components/InputBox";
+import { SubHeading } from "../Components/SubHeading";
+
 export function Register() {
-    return <div>
-        <div className="formContainer">
-            <div className="formWrapper">
-                <span className="logo">Wow chat</span>
-                <span className="title">Register</span>
-                <form>
-                    <input type="text" placeholder="display name"/>
-                    <input type="text" placeholder="email"/>
-                    <input type="text" placeholder="password"/>
-                    <input type="file" />
-                    <button>Sign up</button>
-                </form>
-                <p>You do have an account?</p>
-                <a>Login</a>
+    return <div className=" bg-slate-500 h-screen justify-center flex">
+        <div className="flex flex-col justify-center">
+            <div className="bg-white rounded-lg text-center h-max px-5  py-5 w-96">
+            <Heading label={"WOW CHAT"}/>
+            <SubHeading label= {"Register"}/>
+            <InputBox type={"text"} placeholder={"Eren"} label={"Name:-"}/>
+            <InputBox type={"text"} placeholder={"Eren@gmail.com"} label={"Email:-"}/>
+            <InputBox type={"text"} placeholder={"********"} label={"Password:-"}/>
+            <FileBox type={"file"} />
+            <Button label={"Signup"}/>
             </div>
         </div>
     </div>
