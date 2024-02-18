@@ -1,7 +1,9 @@
+import { BottomWarning } from "../Components/BottomWarning";
 import { Button } from "../Components/Button";
 import { FileBox } from "../Components/FileBox";
 import { Heading } from "../Components/Heading";
 import { InputBox } from "../Components/InputBox";
+import { Password } from "../Components/Password";
 import { SubHeading } from "../Components/SubHeading";
 
 export function Register() {
@@ -12,9 +14,10 @@ export function Register() {
             <SubHeading label= {"Register"}/>
             <InputBox type={"text"} placeholder={"Eren"} label={"Name:-"}/>
             <InputBox type={"text"} placeholder={"Eren@gmail.com"} label={"Email:-"}/>
-            <InputBox type={"text"} placeholder={"********"} label={"Password:-"}/>
+            <Password />
             <FileBox type={"file"} />
             <Button label={"Signup"}/>
+            <BottomWarning label={"You have an account"} to={"/login"} buttonText={"login"}/> 
             </div>
         </div>
     </div>

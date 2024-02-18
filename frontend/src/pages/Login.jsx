@@ -1,7 +1,9 @@
+import { BottomWarning } from "../Components/BottomWarning";
 import { Button } from "../Components/Button";
 import { FileBox } from "../Components/FileBox";
 import { Heading } from "../Components/Heading";
 import { InputBox } from "../Components/InputBox";
+import { Password } from "../Components/Password";
 import { SubHeading } from "../Components/SubHeading";
 
 export function Login() {
@@ -11,8 +13,9 @@ export function Login() {
             <Heading label={"WOW CHAT"}/>
             <SubHeading label= {"Login"}/>
             <InputBox type={"text"} placeholder={"Eren@gmail.com"} label={"Email:-"}/>
-            <InputBox type={"text"} placeholder={"********"} label={"Password:-"}/>
+            <Password />
             <Button label={"Signin"}/>
+            <BottomWarning label={"You don't have an account"} to={"/register"} buttonText={"Register"}/> 
             </div>
         </div>
     </div>
